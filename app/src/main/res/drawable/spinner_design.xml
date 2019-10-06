@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="50dp" android:layout_width="match_parent">
+
+    <item>
+
+        <layer-list>
+
+            <item>
+                <shape>
+                    <stroke android:width="1dp" android:color="@color/colorPrimary" />
+                    <corners android:topRightRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="0dp"
+                        android:bottomLeftRadius="20dp" />
+                    <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+                </shape>
+            </item>
+            <item android:gravity="center_vertical|right" android:drawable="@drawable/ic_keyboard_arrow_down_black_24dp">
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>

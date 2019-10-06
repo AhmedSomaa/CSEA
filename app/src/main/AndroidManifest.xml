@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.ahmed.csea">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.Activity_Login"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Activity_Home"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme" />
+        <activity
+            android:name=".Activities.Activity_Signup"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Activity_Detail"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Activity_Professor_RecyclerView"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme" />
+        <activity
+            android:name=".Activities.Activity_ForgetPassword"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Activity_TA_Reservation"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme" />
+        <activity
+            android:name=".Activities.Activity_Chat"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme" />
+        <activity
+            android:name=".Activities.Activity_Professor"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Activity_Course"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Activity_Course_RecyclerView"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme" />
+        <activity
+            android:name=".Activities.Activity_News"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme" />
+
+        <activity android:name=".Activities.Activity_TA_Profile" />
+
+        <activity android:name=".Activities.Activity_Professor_Reservation"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityHomeTheme"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "267726445208",
+    "firebase_url": "https://csea-af8b2.firebaseio.com",
+    "project_id": "csea-af8b2",
+    "storage_bucket": "csea-af8b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267726445208:android:07a0167322124ea7",
+        "android_client_info": {
+          "package_name": "com.sample.ahmed.csea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267726445208-ld46v63uhjp19snpgr88a358tmnnqvd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCALlxUrcG4WImpy8IqQ0YQkzMENuRQ6Z0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

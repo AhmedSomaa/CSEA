@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/res_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_bg"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_register"
+                android:tint="@color/colorTextIcons" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:text="Registration Form"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextIcons"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/res_lin1"
+        android:layout_above="@id/res_lin6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/res_lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <EditText
+                    android:id="@+id/ta_res_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/reg_btn"
+                    android:padding="10dp"
+                    android:fontFamily="monospace"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:hint="yourname....."
+                    android:textColorHint="@color/colorPrimaryLight"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/res_lin3"
+                android:layout_below="@+id/res_lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Slot"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <Spinner
+                    android:id="@+id/ta_res_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/SpinnerTheme"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/res_lin4"
+                android:layout_below="@+id/res_lin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <Spinner
+                    android:id="@+id/ta_res_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/SpinnerTheme"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/res_lin5"
+                android:layout_below="@+id/res_lin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <CalendarView
+                    android:id="@+id/ta_res_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/et_bg_blue" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/res_lin6"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ta_res_submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/grad_bg"
+            android:text="Reserve"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-light"
+            android:textSize="25sp"
+            android:textColor="@color/colorTextIcons"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
